@@ -7,158 +7,239 @@
   <meta name="description" content="CalmShare is a simple, secure document-sharing portal for Australian allied health practitioners and clinics. Australian-hosted, privacy-conscious, and easy to use." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="CalmShare – Calm, secure file sharing for allied health">
-  <meta property="og:description" content="Australian-built, privacy-conscious document sharing for clinicians and clinics.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-domain.com">
-  <meta property="og:image" content="https://your-domain.com/og-image.png">
+  <meta property="og:title" content="CalmShare – Calm, secure file sharing for allied health" />
+  <meta property="og:description" content="Australian-built, privacy-conscious document sharing for clinicians and clinics." />
+  <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1" />
 </head>
+
 <body>
   <!-- Navigation -->
   <header class="nav">
-    <div class="nav__logo">CalmShare</div>
-    <nav class="nav__links">
+    <div class="nav__inner">
+     <a href="/" class="nav__logo" aria-label="CalmShare home">
+  <img src="calmshare-full-logo.svg" alt="CalmShare" />
+</a>
+
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="nav__button">Start subscription</a>
+      </nav>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="nav__mobile" aria-label="Mobile navigation">
       <a href="#features">Features</a>
       <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
-      <a href="#cta" class="nav__button">Start subscription</a>
+      <a href="#cta" class="btn btn--primary btn--full">Start subscription</a>
     </nav>
   </header>
 
   <main>
     <!-- Hero -->
     <section id="hero" class="hero">
-      <div class="hero__content">
-        <h1>Calm, secure file sharing for allied health</h1>
-        <p>Built in Australia. Easy to use. Compliant by design.</p>
-        <p>
-          CalmShare is a simple, secure document‑sharing portal for clinicians and clinics who need to share files with clients—without complexity, confusion, or enterprise‑level pricing.
-        </p>
-        <p>No clutter. No technical setup. Just a calm, reliable way to exchange sensitive documents.</p>
-        <div class="hero__form">
-          <a href="https://app.your-domain.com/signup" class="btn btn--primary">
-            Start your CalmShare subscription
-          </a>
-          <a href="https://calendly.com/your-demo-link" class="btn">
-            Book a quick demo
-          </a>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1>Calm, secure file sharing for allied health</h1>
+
+          <p class="hero__lead">
+            Built in Australia. Easy to use. Compliant by design.
+          </p>
+
+          <p>
+            CalmShare is a simple, secure document‑sharing portal for clinicians and clinics who need to share files with clients—without complexity, confusion, or enterprise‑level pricing.
+          </p>
+
+          <p>
+            No clutter. No technical setup. Just a calm, reliable way to exchange sensitive documents.
+          </p>
+
+          <div class="hero__actions">
+            <!-- Replace these links with your Stripe payment links (recommended) -->
+            <a href="https://app.your-domain.com/signup" class="btn btn--primary">
+              Start your CalmShare subscription
+            </a>
+            <a href="#pricing" class="btn">
+              View pricing
+            </a>
+          </div>
+
+          <p class="hero__subtext">
+            Built for Australian allied health professionals and their clients.
+          </p>
         </div>
-        <p class="hero__subtext">Built for Australian allied health professionals and their clients.</p>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__mockup">
-          Replace this area with a screenshot of your CalmShare portal or a simple branded illustration that conveys calm, secure document sharing.
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__mockup">
+            <div class="mockup__header">
+              <div class="mockup__dot"></div>
+              <div class="mockup__dot"></div>
+              <div class="mockup__dot"></div>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__title">Client portal</div>
+              <div class="mockup__line"></div>
+              <div class="mockup__line short"></div>
+              <div class="mockup__card">
+                <div class="mockup__pill"></div>
+                <div class="mockup__pill"></div>
+              </div>
+              <div class="mockup__card">
+                <div class="mockup__pill"></div>
+                <div class="mockup__pill"></div>
+              </div>
+              <div class="mockup__note">Replace this mockup with a screenshot later.</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Features / Why -->
     <section id="features" class="section section--alt">
-      <h2>Why CalmShare</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Australian‑hosted</h3>
-          <p>Your data stays in Australia, supporting your obligations under local privacy law and aligning with client expectations around data storage.</p>
-        </div>
-        <div class="card">
-          <h3>Designed for clinicians</h3>
-          <p>Plain language, minimal screens, and no unnecessary features—so you can focus on clinical work, not software or IT management.</p>
-        </div>
-        <div class="card">
-          <h3>Client‑friendly by default</h3>
-          <p>Easy for clients to access and use, even if they are not tech‑savvy, reducing support time and friction around document sharing.</p>
-        </div>
-        <div class="card">
-          <h3>Built with care</h3>
-          <p>Developed by a practising Australian psychologist who understands clinical workflows, privacy obligations, and client trust.</p>
+      <div class="section__inner">
+        <h2>Why CalmShare</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Australian‑hosted</h3>
+            <p>Your data stays in Australia, supporting your obligations under local privacy law and aligning with client expectations around data storage.</p>
+          </div>
+
+          <div class="card">
+            <h3>Designed for clinicians</h3>
+            <p>Plain language, minimal screens, and no unnecessary features—so you can focus on clinical work, not software or IT management.</p>
+          </div>
+
+          <div class="card">
+            <h3>Client‑friendly by default</h3>
+            <p>Easy for clients to access and use, even if they are not tech‑savvy, reducing support time and friction around document sharing.</p>
+          </div>
+
+          <div class="card">
+            <h3>Built with care</h3>
+            <p>Developed by a practising Australian psychologist who understands clinical workflows, privacy obligations, and client trust.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section">
-      <h2>About CalmShare</h2>
-      <p>
-        CalmShare exists because secure file sharing in healthcare has become unnecessarily complicated.
-      </p>
-      <p>Many clinicians are forced to choose between systems that are:</p>
-      <ul class="steps">
-        <li>Too technical</li>
-        <li>Too expensive</li>
-        <li>Too cluttered</li>
-        <li>Designed for large enterprises, not real clinical work</li>
-      </ul>
-      <p>
-        CalmShare is built specifically for allied‑health professionals who want a calm, respectful experience for clients, confidence that sensitive information is handled appropriately, and a system that “just works” without ongoing management.
-      </p>
-      <p>It focuses on what matters—and leaves everything else out.</p>
+      <div class="section__inner">
+        <h2>About CalmShare</h2>
+
+        <p>CalmShare exists because secure file sharing in healthcare has become unnecessarily complicated.</p>
+
+        <p>Many clinicians are forced to choose between systems that are:</p>
+
+        <ul class="steps">
+          <li>Too technical</li>
+          <li>Too expensive</li>
+          <li>Too cluttered</li>
+          <li>Designed for large enterprises, not real clinical work</li>
+        </ul>
+
+        <p>
+          CalmShare is built specifically for allied‑health professionals who want a calm, respectful experience for clients, confidence that sensitive information is handled appropriately, and a system that “just works” without ongoing management.
+        </p>
+
+        <p>It focuses on what matters—and leaves everything else out.</p>
+      </div>
     </section>
 
     <!-- Pricing -->
     <section id="pricing" class="section section--alt">
-      <h2>Subscription options</h2>
-      <div class="grid">
-        <!-- Solo -->
-        <div class="pricing__plan">
-          <h3>Solo practitioner</h3>
-          <p>For individual clinicians and sole traders.</p>
-          <p class="pricing__price">$15 / practitioner / month</p>
-          <p>A straightforward, secure portal you can start using immediately—no IT background required.</p>
-          <ul>
-            <li>Secure client document sharing</li>
-            <li>Individual practitioner account</li>
-            <li>Australian‑hosted data</li>
-            <li>Privacy‑first design aligned with Australian Privacy Principles</li>
-            <li>Simple, uncluttered interface for you and your clients</li>
-          </ul>
-          <p><strong>Best for:</strong> psychologists, counsellors, speech pathologists, occupational therapists, and other individual allied‑health practitioners.</p>
-          <a href="https://app.your-domain.com/signup?plan=solo" class="btn btn--primary">Choose Solo plan</a>
-        </div>
+      <div class="section__inner">
+        <h2>Subscription options</h2>
 
-        <!-- Clinic -->
-        <div class="pricing__plan">
-          <h3>Clinic</h3>
-          <p>For practices and multi‑clinician teams.</p>
-          <p class="pricing__price">
-            $49 / month for up to 5 practitioners<br />
-            + $10 / month per additional practitioner
-          </p>
-          <p>Designed for clinics that want a shared system without complexity or overhead.</p>
-          <ul>
-            <li>Everything in Solo</li>
-            <li>Multiple practitioner accounts</li>
-            <li>Centralised clinic‑level management</li>
-            <li>Consistent branding across the portal</li>
-            <li>Clear separation between clinic and client access</li>
-            <li>Scales easily as your team grows</li>
-          </ul>
-          <p><strong>Best for:</strong> group practices, multidisciplinary clinics, and growing teams.</p>
-          <a href="https://app.your-domain.com/signup?plan=clinic" class="btn btn--primary">Choose Clinic plan</a>
+        <div class="grid grid--pricing">
+          <!-- Solo -->
+          <div class="pricing">
+            <h3>Solo practitioner</h3>
+            <p class="pricing__tagline">For individual clinicians and sole traders.</p>
+
+            <p class="pricing__price">$15 <span>/ practitioner / month</span></p>
+
+            <p>A straightforward, secure portal you can start using immediately—no IT background required.</p>
+
+            <ul>
+              <li>Secure client document sharing</li>
+              <li>Individual practitioner account</li>
+              <li>Australian‑hosted data</li>
+              <li>Privacy‑first design aligned with Australian Privacy Principles</li>
+              <li>Simple, uncluttered interface for you and your clients</li>
+            </ul>
+
+            <p><strong>Best for:</strong> psychologists, counsellors, speech pathologists, occupational therapists, and other individual allied‑health practitioners.</p>
+
+            <a href="https://app.your-domain.com/signup?plan=solo" class="btn btn--primary">Choose Solo plan</a>
+          </div>
+
+          <!-- Clinic -->
+          <div class="pricing pricing--featured">
+            <div class="pricing__badge">Best value for clinics</div>
+
+            <h3>Clinic</h3>
+            <p class="pricing__tagline">For practices and multi‑clinician teams.</p>
+
+            <p class="pricing__price">$49 <span>/ month (up to 5 practitioners)</span></p>
+            <p class="pricing__small">+ $10 / month per additional practitioner</p>
+
+            <p>Designed for clinics that want a shared system without complexity or overhead.</p>
+
+            <ul>
+              <li>Everything in Solo</li>
+              <li>Multiple practitioner accounts</li>
+              <li>Centralised clinic‑level management</li>
+              <li>Consistent branding across the portal</li>
+              <li>Clear separation between clinic and client access</li>
+              <li>Scales easily as your team grows</li>
+            </ul>
+
+            <p><strong>Best for:</strong> group practices, multidisciplinary clinics, and growing teams.</p>
+
+            <a href="https://app.your-domain.com/signup?plan=clinic" class="btn btn--primary">Choose Clinic plan</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Final CTA -->
     <section id="cta" class="section cta">
-      <h2>Simple. Secure. Calm.</h2>
-      <p>
-        If you want secure file sharing that feels professional, respectful, and easy—for both you and your clients—CalmShare is ready.
-      </p>
-      <a href="https://app.your-domain.com/signup" class="btn btn--primary">
-        Start your CalmShare subscription
-      </a>
+      <div class="section__inner">
+        <h2>Simple. Secure. Calm.</h2>
+        <p>
+          If you want secure file sharing that feels professional, respectful, and easy—for both you and your clients—CalmShare is ready.
+        </p>
+
+        <a href="https://app.your-domain.com/signup" class="btn btn--primary">
+          Start your CalmShare subscription
+        </a>
+
+        <p class="cta__note">
+          CalmShare is a product of Real Calm.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> CalmShare. All rights reserved.</p>
+    <div class="footer__inner">
+      <img src="calmshare-logo.svg" alt="CalmShare" style="height:20px; opacity:0.6; margin-bottom:0.5rem;" />
+      <p>© <span id="year"></span> CalmShare. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script>
-    // Simple dynamic year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="app.js?v=1" defer></script>
 </body>
 </html>
