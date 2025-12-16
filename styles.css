@@ -246,6 +246,13 @@ img {
   letter-spacing: -0.01em;
 }
 
+.mockup__subtitle {
+  margin-top: 0.6rem;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .mockup__line {
   height: 10px;
   border-radius: 999px;
