@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "testing-101dc"
-  }
+  },
+  "targets": {
+    "calmshare-prod": {
+      "hosting": {
+        "website": [
+          "calmshare-website"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
