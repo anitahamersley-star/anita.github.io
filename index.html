@@ -26,6 +26,7 @@
       <nav class="nav__links" aria-label="Primary navigation">
         <a href="#features">Features</a>
         <a href="#about">About</a>
+        <a href="#how-it-works">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="https://buy.stripe.com/test_cNi28sa1C79cedxfRU6wE00" target="_blank" rel="noopener"
 class="nav__button">Start subscription</a>
@@ -173,6 +174,90 @@ class="btn btn--primary">
       </div>
     </section>
 
+    <!--How it works-->
+    <section id="how-it-works" class="section">
+  <div class="section__inner">
+    <h2>How CalmShare works</h2>
+
+    <p class="how__intro">
+      CalmShare is designed to make secure document sharing simple for everyday clinical work.
+    </p>
+
+    <div class="how__steps">
+      <div class="how__step">
+        <h3>Create your account</h3>
+        <p>
+          Subscribe and create your CalmShare account in minutes. No technical setup is required.
+        </p>
+      </div>
+
+      <div class="how__step">
+        <h3>Share or request documents</h3>
+        <p>
+          Upload documents for clients to access, or invite clients to securely upload files for you.
+          Everything stays in one organised place.
+        </p>
+      </div>
+
+      <div class="how__step">
+        <h3>Clients access files easily</h3>
+        <p>
+          Clients can view, download, or upload documents using a simple, client-friendly portal.
+          No technical knowledge is required.
+        </p>
+      </div>
+    </div>
+
+    <p class="how__note">
+      CalmShare is designed to sit alongside your existing practice systems, without replacing them.
+    </p>
+  </div>
+</section>
+
+    <!--FAQ-->
+    <section id="faq" class="section">
+  <div class="section__inner">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq">
+      <details>
+        <summary>Is CalmShare compliant with Australian privacy requirements?</summary>
+        <p>CalmShare is designed to support compliance with the Australian Privacy Principles. Data is hosted in Australia, and the platform is built with privacy and confidentiality in mind.</p>
+      </details>
+
+      <details>
+        <summary>Is CalmShare suitable for client use?</summary>
+        <p>Yes. CalmShare is designed to be simple and client-friendly, including for clients who are not comfortable with technology.</p>
+      </details>
+
+      <details>
+        <summary>What happens after I subscribe?</summary>
+        <p>After subscribing, you receive access to your CalmShare account and can begin sharing documents with clients straight away.</p>
+      </details>
+
+      <details>
+        <summary>Can clients upload documents to me?</summary>
+        <p>Yes. CalmShare supports secure two-way document sharing between you and your clients.</p>
+      </details>
+
+      <details>
+        <summary>Do I need to replace my existing practice management system?</summary>
+        <p>No. CalmShare is designed to work alongside your existing systems and focuses only on secure document sharing.</p>
+      </details>
+
+      <details>
+        <summary>How is billing handled? Can I cancel?</summary>
+        <p>Subscriptions are billed monthly, and you can cancel at any time through your billing portal.</p>
+      </details>
+
+      <details>
+        <summary>Is CalmShare suitable for clinics?</summary>
+        <p>Yes. CalmShare supports both solo practitioners and clinics, with plans designed for each.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
     <!-- Pricing -->
     <section id="pricing" class="section section--alt">
       <div class="section__inner">
@@ -237,26 +322,28 @@ class="btn btn--primary">Choose Clinic plan</a>
     <!--Contact-->
     <section id="contact" class="section">
   <div class="section__inner">
-    <h2>Contact</h2>
-    <p class="contact__intro">Questions about CalmShare, clinic pricing, or onboarding. Send a quick message and we will get back to you.</p>
+    <h2>Contact Us</h2>
+    <p class="contact__intro">
+      Questions about CalmShare, clinic pricing or onboarding? Send us a message and we will get back to you.
+    </p>
 
     <form class="contact__form" action="https://formspree.io/f/xldqybpr" method="POST">
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required />
-      </label>
+      <div class="contact__grid">
+        <label class="field">
+          <span class="field__label">Name</span>
+          <input class="field__input" type="text" name="name" autocomplete="name" required />
+        </label>
 
-      <label>
-        <span>Email</span>
-        <input type="email" name="email" autocomplete="email" required />
-      </label>
+        <label class="field">
+          <span class="field__label">Email</span>
+          <input class="field__input" type="email" name="email" autocomplete="email" required />
+        </label>
+      </div>
 
-      <label>
-        <span>Message</span>
-        <textarea name="message" rows="6" required></textarea>
+      <label class="field">
+        <span class="field__label">Message</span>
+        <textarea class="field__input field__textarea" name="message" rows="6" required></textarea>
       </label>
-
-      <input type="hidden" name="source" value="CalmShare website" />
 
       <button type="submit" class="btn btn--primary">Send message</button>
 
@@ -266,6 +353,7 @@ class="btn btn--primary">Choose Clinic plan</a>
     </form>
   </div>
 </section>
+
 
     <!-- Final CTA -->
     <section id="cta" class="section cta">
