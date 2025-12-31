@@ -5,9 +5,9 @@ import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBY5VVFYZlcI7sdgtO16QZUaBPZ4hd8FL8",
-  authDomain: "calmshare-dev.firebaseapp.com",
-  projectId: "calmshare-dev",
-  storageBucket: "calmshare-dev.firebasestorage.app",
+  authDomain: "calmshare-prod.firebaseapp.com",
+  projectId: "calmshare-prod",
+  storageBucket: "calmshare-prod.firebasestorage.app",
   messagingSenderId: "384994574622",
   appId: "1:384994574622:web:8d544160ed85cccbb3090f",
   measurementId: "G-TNX0NWX9FV"
