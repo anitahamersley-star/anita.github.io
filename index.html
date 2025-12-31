@@ -28,8 +28,7 @@
         <a href="#about">About</a>
         <a href="#how-it-works">How it works</a>
         <a href="#pricing">Pricing</a>
-        <a href="https://buy.stripe.com/test_8x27sD4Ye8ri5O3edB5EY00" target="_blank" rel="noopener"
-class="nav__button">Start subscription</a>
+        <button type="button" class="nav__button" data-open-subscribe>Subscribe</button>
         <a href="#contact">Contact</a>
 
 
@@ -45,8 +44,7 @@ class="nav__button">Start subscription</a>
       <a href="#features">Features</a>
       <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
-      <a href="https://buy.stripe.com/test_8x27sD4Ye8ri5O3edB5EY00" target="_blank" rel="noopener"
-class="btn btn--primary btn--full">Start subscription</a>
+      <button type="button" class="btn btn--primary btn--full" data-open-subscribe>Subscribe</button>
 
     </nav>
   </header>
@@ -71,11 +69,9 @@ class="btn btn--primary btn--full">Start subscription</a>
           </p>
 
           <div class="hero__actions">
-            <!-- Replace these links with your Stripe payment links (recommended) -->
-            <a href="https://buy.stripe.com/test_8x27sD4Ye8ri5O3edB5EY00" target="_blank" rel="noopener"
-class="btn btn--primary">
-  Start your CalmShare subscription
-</a>
+            <button type="button" class="btn btn--primary" data-open-subscribe>
+              Subscribe
+            </button>
 
             <a href="#pricing" class="btn">
               View pricing
@@ -283,8 +279,7 @@ class="btn btn--primary">
 
             <p><strong>Best for:</strong> psychologists, counsellors, speech pathologists, occupational therapists and other individual allied‑health practitioners.</p>
 
-            <a href="https://buy.stripe.com/test_8x27sD4Ye8ri5O3edB5EY00" target="_blank" rel="noopener"
-class="btn btn--primary">Choose Solo plan</a>
+            <button type="button" class="btn btn--primary" data-open-subscribe data-plan="solo">Subscribe</button>
 
           </div>
 
@@ -311,8 +306,7 @@ class="btn btn--primary">Choose Solo plan</a>
 
             <p><strong>Best for:</strong> group practices, multidisciplinary clinics and growing teams.</p>
 
-            <a href="https://buy.stripe.com/test_28E9ALaiydLCekz1qP5EY02" target="_blank" rel="noopener"
-class="btn btn--primary">Choose Clinic plan</a>
+            <button type="button" class="btn btn--primary" data-open-subscribe data-plan="clinic">Subscribe</button>
 
           </div>
         </div>
@@ -363,10 +357,9 @@ class="btn btn--primary">Choose Clinic plan</a>
           If you want secure file sharing that feels professional, respectful, and easy - for both you and your clients - CalmShare is ready.
         </p>
 
-        <a href="https://buy.stripe.com/test_8x27sD4Ye8ri5O3edB5EY00" target="_blank" rel="noopener"
-class="btn btn--primary">
-  Start your CalmShare subscription
-</a>
+        <button type="button" class="btn btn--primary" data-open-subscribe>
+          Subscribe
+        </button>
 
         <p class="cta__note">
           CalmShare is a product of Real Calm.
@@ -374,6 +367,53 @@ class="btn btn--primary">
       </div>
     </section>
   </main>
+
+  <div id="subscribe-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close-subscribe></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" aria-label="Close subscribe modal" data-close-subscribe>&times;</button>
+      <div class="modal__header">
+        <h3>Subscribe to CalmShare</h3>
+        <p class="modal__intro">Enter your details to start secure checkout.</p>
+        <p class="modal__note" id="subscribe-plan-note">Solo plan selected.</p>
+      </div>
+
+      <form id="subscribe-form" class="modal__form" novalidate>
+        <label class="field">
+          <span class="field__label">Plan</span>
+          <select id="subscribe-plan" class="field__input" name="plan" required>
+            <option value="solo">Solo practitioner</option>
+            <option value="clinic">Clinic</option>
+          </select>
+        </label>
+
+        <div class="field" id="practitioner-count-group" data-clinic-field>
+          <span class="field__label">Number of practitioners</span>
+          <input id="subscribe-practitioner-count" class="field__input" type="number" min="1" value="5" inputmode="numeric" />
+          <p class="modal__hint">Clinic includes up to 5 practitioners. Additional practitioners are billed as extra seats.</p>
+        </div>
+
+        <label class="field">
+          <span class="field__label">Clinic name</span>
+          <input id="subscribe-clinic-name" class="field__input" type="text" autocomplete="organization" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Clinic email</span>
+          <input id="subscribe-clinic-email" class="field__input" type="email" autocomplete="email" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Email used for checkout</span>
+          <input id="subscribe-purchaser-email" class="field__input" type="email" autocomplete="email" required />
+        </label>
+
+        <p id="subscribe-msg" class="modal__msg" role="status" aria-live="polite"></p>
+
+        <button id="subscribe-submit" type="submit" class="btn btn--primary modal__submit">Start checkout</button>
+      </form>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer__inner">
@@ -383,5 +423,7 @@ class="btn btn--primary">
   </footer>
 
   <script src="app.js?v=1" defer></script>
+  <script type="module" src="/js/subscribe-modal.js"></script>
+
 </body>
 </html>
