@@ -4,10 +4,11 @@
     "target": "website",
     "ignore": [
       "firebase.json",
+      ".firebaserc",
       "**/.*",
-      "**/node_modules/**",
-      "public/**"
+      "**/node_modules/**"
     ]
   }
 }
+
 

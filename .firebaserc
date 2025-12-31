@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "testing-101dc"
+    "default": "calmshare-dev",
+    "prod": "calmshare-prod"
   },
   "targets": {
     "calmshare-prod": {
